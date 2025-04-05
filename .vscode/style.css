@@ -17,6 +17,7 @@
     --beetle-green: #547878;
     --topaz: #26C2AE;
     --regent-grey: #7F9D9F;
+    --water-leaf: #9FE8DF;
 } 
 
 body{
@@ -69,7 +70,7 @@ main{
         outline: none;
         font-size: 2.4rem;
         font-weight: 700;
-        color: var(--sherpa-blue)
+        color: var(--sherpa-blue);
     } 
 
     input::placeholder{
@@ -94,6 +95,16 @@ main{
             border-radius: .5rem ;
             padding-block: .6rem ;
             font-weight: 700;
+        } 
+
+        button:hover{
+            background: var(--water-leaf);
+            cursor: pointer;
+            transition: .3s;
+        } 
+
+        .button-selected{
+           background: var(--topaz); 
         }
         
         input{
@@ -161,5 +172,46 @@ main{
     padding-block: .9rem;
     border-radius: .5rem;
     margin-top: 2.4rem; 
- }
+ } 
+    button:hover{
+      background: var(--water-leaf);
+      cursor: pointer;
+      transition: .3s;  
+    }
+
  
+ input::::-webkit-inner-spin-button
+ input::::-webkit-outer-spin-button {
+    display: none;
+ } 
+
+ @media (min-width: 928px){
+    header{
+        margin-top:5rem ;
+    }
+
+    main{
+        display: flex;
+        max-width: 92rem;
+        margin-inline: auto;
+        border-radius: 2.5rem;
+        padding: 4.8rem;
+        gap: 4.8rem;
+
+        section{
+           width: 100%; 
+        } 
+
+        .tip div{
+         grid-template-columns: repeat(3 1fr);   
+        } 
+
+        .results{
+           .amount strong,
+           .total strong{
+            
+           }
+        }
+
+    }
+ }
