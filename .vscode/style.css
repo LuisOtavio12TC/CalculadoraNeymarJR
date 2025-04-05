@@ -10,11 +10,11 @@
 :root {
     font-size: 62.5%;
 
-    --bg-body: #C5E4E7;
-    --bg-main: #FFF;
-    --strong-text: #5E7A7D;
-    --bg-div: #F3F9FA;
-    --input-text: #00474B;
+    --jagged-ice: #C5E4E7;
+    --white: #FFF;
+    --greyish-turquoise: #5E7A7D;
+    --squeze: #F3F9FA;
+    --sherpa-blue: #00474B;
     --topaz: #26C2AE;
     --beetle-green: #547878;
     --regent-grey: #7F9D9F;
@@ -23,7 +23,7 @@
 
 body {
     font-size: 1.6rem;
-    background: var(--bg-body);
+    background: var(--jagged-ice);
 }
 
 header {
@@ -35,7 +35,7 @@ header {
 }
 
 main {
-    background: var(--bg-main);
+    background: var(--white);
     padding: 3.2rem 2.4rem;
     border-radius: 2.5rem 2.5rem 0 0;
 }
@@ -48,12 +48,12 @@ main {
     }
 
     strong {
-        color: var(--strong-text);
+        color: var(--greyish-turquoise);
     }
 
     .input-box {
         margin-top: .6rem;
-        background: var(--bg-div);
+        background: var(--squeze);
         padding: .6rem 1.8rem;
         display: flex;
         align-items: center;
@@ -67,10 +67,10 @@ main {
            outline: none;
            font-size: 2.4rem;
            font-weight: 700;
-           color: var(--input-text);
+           color: var(--sherpa-blue);
     
            &::placeholder{
-            color: var(--input-text);
+            color: var(--sherpa-blue);
              opacity: 0.35;
            }
        }
@@ -89,8 +89,8 @@ main {
 
             button {
                font-size: 2.4rem;
-               color: var(--bg-main);
-               background: var(--input-text);
+               color: var(--white);
+               background: var(--sherpa-blue);
                border: none;
                padding-block: .6rem;
                font-weight: 700;
@@ -104,12 +104,12 @@ main {
             input {
                width: 100%;
                border: none;
-               background: var(--bg-div);
+               background: var(--squeze);
                border-radius: .5rem;
                font-size: 2.4rem;
                font-weight: 700;
                text-align: center;
-               color: var(--input-text);
+               color: var(--sherpa-blue);
 
                &::placeholder {
                 color: var(--beetle-green);
@@ -124,7 +124,7 @@ main {
 }
 
 .results {
-    background: var(--input-text);
+    background: var(--sherpa-blue);
     border-radius: 1.5rem;
     padding: 4rem 2.4rem 2.4rem;
 
@@ -136,7 +136,7 @@ main {
         margin-bottom: 2.4rem;
 
         p {
-            color: var(--bg-main);
+            color: var(--white);
             font-weight: 700;
 
             span {
@@ -153,7 +153,7 @@ main {
 
     button {
         background: var(--topaz);
-        color: var(--input-text);
+        color: var(--sherpa-blue);
         font-size: 2rem;
         text-transform: uppercase;
         width: 100%;
