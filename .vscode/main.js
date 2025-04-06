@@ -61,3 +61,17 @@ function calculateTotalPerson(tipAmountPerson) {
     let totalAmountPerson = bill / numberOfpeople + tipAmountPerson;
     totalStrong.textContent = `$${totalAmountPerson.toFixed(2)}`;
 }
+ 
+function reset(){
+    bill = 0;
+    document.querySelector("#bill").value = ""
+
+    tipPercentage = 0;
+    removeClassButtonSelected()
+    document.querySelector("#custom-tip").value = ""
+    numberOfpeople = 0;
+    document.querySelector("#people").value = ""
+    document.querySelector(".total strong").textContent = "$0.00"
+    document.querySelector(".amount strong").textContent = "$0.00"
+
+}
